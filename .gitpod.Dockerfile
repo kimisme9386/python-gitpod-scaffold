@@ -8,7 +8,7 @@ RUN ["apt-get", "install", "-y", "zsh"]
 
 USER gitpod
 
-COPY ./.gitpod/oh-my-zsh.sh ./.gitpod/oh-my-zsh.sh
+COPY . .
 
 # Install Oh-My-Zsh glide and setup zsh 
 RUN sudo chmod +x ./.gitpod/oh-my-zsh.sh && ./.gitpod/oh-my-zsh.sh && brew install glide
